@@ -1,0 +1,15 @@
+@use "./scss/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+.app-container {
+  @include flex(center, center);
+}

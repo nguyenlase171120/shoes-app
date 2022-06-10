@@ -1,0 +1,68 @@
+@use "../../scss/" as *;
+.content__container {
+  @include flex(center, center);
+  margin: 2rem 10rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.content__add {
+  @include flex(center, center);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    color: royalblue;
+  }
+}
+
+.content__icon {
+  margin-right: 10px;
+}
+
+.content__container-main {
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.content_pagination-links {
+  @include flex(center, center);
+  list-style: none;
+  margin: 1rem 0px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.content-active {
+  background-color: #646fd4;
+  color: #fff;
+
+  &:hover {
+    background-color: red;
+  }
+}
+
+.content-page {
+  padding: 10px 12px;
+  border: 1px solid #f1eee9;
+  margin: 0px 0.5rem;
+
+  &:hover {
+    background-color: #dbdffd;
+  }
+}
+
+.page_button-previous {
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: #cdc2ae;
+}
+
+.page_button-next {
+  padding: 1rem;
+  color: #cdc2ae;
+  font-size: 1.25rem;
+}

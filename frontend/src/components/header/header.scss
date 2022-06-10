@@ -1,0 +1,65 @@
+@use "../../scss/" as *;
+.header__container {
+  padding: 0px 1.5rem;
+  @include flex(center, space-between);
+  width: 100vw;
+}
+
+.header__container--images {
+  cursor: pointer;
+  img {
+    width: 5rem;
+    border-radius: 50%;
+  }
+  h3 {
+    color: $black-color;
+  }
+}
+
+.header__container-auth {
+  @include flex(center, center);
+
+  .header__container-button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #d8e3e7;
+    position: relative;
+  }
+
+  span {
+    cursor: pointer;
+    position: relative;
+
+    div {
+      width: 0px;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      background-color: #4d4c7d;
+      height: 3px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover {
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.btn-logout {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  background-color: #a760ff;
+  font-weight: bold;
+}

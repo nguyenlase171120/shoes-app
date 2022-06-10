@@ -1,0 +1,42 @@
+@use "../../scss/" as *;
+.card__container {
+  img {
+    width: 15rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  margin: 2rem 3rem;
+}
+
+.card__container__info {
+  text-align: center;
+
+  h4 {
+    cursor: pointer;
+  }
+
+  p {
+    color: red;
+    font-weight: bold;
+  }
+}
+
+.card__container-features {
+  @include flex(center, center);
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+  .card__container-update {
+    margin-right: 0.5rem;
+    &:hover {
+      color: #61a4bc;
+    }
+  }
+
+  .card__container-delete {
+    &:hover {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@use "../../scss/" as *;
+
+.content_search-result {
+  background-color: #efefef;
+  padding: 10px 14px;
+  margin: 10px;
+  width: 235px;
+
+  @include flex(start, center);
+  flex-direction: column;
+}
+
+.content__search {
+  @include flex(center, center);
+  position: absolute;
+  top: 15%;
+  right: 10px;
+  flex-direction: column;
+
+  input {
+    padding: 4px;
+    margin-right: 10px;
+    outline: none;
+  }
+
+  button {
+    padding: 6px;
+    background-color: #646fd4;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: #92b4ec;
+    }
+  }
+}
+
+.container__item-details {
+  @include flex(center, center);
+  padding: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+
+  cursor: pointer;
+
+  img {
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  .item-info {
+    @include flex(start, center);
+    flex-direction: column;
+
+    h5 {
+      font-weight: bold;
+      font-size: medium;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: green;
+      font-size: small;
+    }
+  }
+}

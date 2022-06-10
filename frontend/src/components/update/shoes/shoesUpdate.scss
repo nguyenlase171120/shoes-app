@@ -1,0 +1,92 @@
+@use "../../../scss/" as *;
+.update__container {
+  background-image: linear-gradient(#4568dc, #b06ab3);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.form__container {
+  background-color: #fff;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+  padding: 10px 14px;
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.form__container-details {
+  @include flex(start, center);
+  flex-direction: column;
+
+  label {
+    font-weight: bold;
+    margin: 10px 0px;
+  }
+  .form-input {
+    width: 300px;
+    border: 0.5px solid #e9d5ca;
+    outline: none;
+    border-radius: 4px;
+    margin: 10px 0px;
+    padding: 10px;
+  }
+}
+
+.btn__container {
+  @include flex(center, space-between);
+  width: 100%;
+  margin: 10px 0px;
+  button {
+    padding: 8px 14px;
+    cursor: pointer;
+    background-color: #764af1;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .btn-link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #4d4c7d;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #363062;
+      transform: scale(1);
+    }
+  }
+}
+
+.form-error {
+  font-size: 14px;
+  margin: 10px 0px;
+  color: red;
+}
+
+.form__image {
+  @include flex(start, center);
+  flex-direction: column;
+
+  img {
+    width: 100px;
+    margin: 10px 0px;
+  }
+}
+
+.status-success {
+  color: green;
+  font-size: 14px;
+  margin: 10px 0px;
+}

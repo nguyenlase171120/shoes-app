@@ -1,0 +1,81 @@
+@use "../../../scss/" as *;
+
+.login__container {
+  background-image: linear-gradient(#4568dc, #b06ab3);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  .login__container-form {
+    background-color: white;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 1rem;
+
+    .login__container_errors {
+      border: 1px solid #f47c7c;
+      padding: 1rem;
+    }
+    ul {
+      @include flex(start, center);
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      color: #d61c4e;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 10px 0px;
+    }
+    form {
+      @include flex(start, center);
+      flex-direction: column;
+      padding: 1rem;
+
+      label {
+        margin: 8px 0px;
+        font-weight: 600;
+      }
+
+      .login__container-input {
+        width: 23rem;
+        border: 1px solid #f1eee9;
+        outline: none;
+        padding: 0.5rem;
+        margin: 8px 0px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        background-color: #7858a6;
+        color: $white-color;
+        cursor: pointer;
+        font-weight: bold;
+        border: none;
+      }
+    }
+  }
+}
+
+.login__form-error {
+  font-size: small;
+  color: red;
+  font-weight: semibold;
+  margin: 3px 0px;
+}
+
+.signup-link {
+  @include flex(center, center);
+  cursor: pointer;
+  span {
+    margin-left: 0.5rem;
+    color: #92b4ec;
+  }
+}
